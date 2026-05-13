@@ -98,3 +98,7 @@ During DDoS attacks, the receiver may experience:
 - AES-GCM decrypt failures
 - Queue congestion
 - Uplink saturation
+
+# run docker file
+```
+    docker compose up -- build

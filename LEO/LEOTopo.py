@@ -20,7 +20,7 @@ class LEOTopo:
         attacker = self.net.addHost('attacker', ip=None)
         
         # setup delay
-        with open('/home/issei/workspace/leo/config_hypatia/description.txt') as f:
+        with open('../config_hypatia/description.txt') as f:
             lines = f.readlines()
             max_gsl = float(lines[0].split('=')[1].strip())
             max_isl = float(lines[1].split('=')[1].strip())

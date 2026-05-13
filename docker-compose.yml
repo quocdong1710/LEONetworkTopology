@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+  leo:
+    build: .
+    container_name: leo-network
+
+    privileged: true
+
+    cap_add:
+      - NET_ADMIN
+      - SYS_ADMIN
+      - NET_RAW
+
+    stdin_open: true
+    tty: true
+
+    network_mode: host
+
+    volumes:
+      - ./:/app
+
+    working_dir: /app
+
+    command: bash
