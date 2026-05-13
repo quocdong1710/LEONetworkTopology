@@ -22,4 +22,4 @@ services:
 
     working_dir: /app
 
-    command: bash
+command: bash -c "  service openvswitch-switch start &&  python3 /app/LEO/topo.py"
