@@ -6,19 +6,12 @@ RUN apt-get update && apt-get install -y \
     python3 \
     python3-pip \
     mininet \
-    openvswitch-switch \
-    openvswitch-common \
-    hping3 \
-    iperf3 \
-    tcpdump \
+    iproute2 \
     iputils-ping \
     net-tools \
-    curl \
-    wget \
-    nano \
-    vim \
-    sudo \
-    dos2unix \
+    hping3 \
+    tcpdump \
+    openvswitch-switch \
     && apt-get clean
 
 WORKDIR /app
